@@ -17,4 +17,4 @@ def test_login(driver):
     driver.find_element(By.ID, "login-submit").click()
 # Critère de succès
     loggedas = driver.find_element(By.ID, "loggedas")
-    assert username in loggedas.tex
+    assert username in loggedas.text
